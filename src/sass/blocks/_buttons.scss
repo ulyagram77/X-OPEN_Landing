@@ -14,4 +14,32 @@
     text-align: center;
     text-transform: uppercase; 
     color: #FFFFFF;
+    &:hover{
+        background: #FF7BAB;
+    }
+    &_left{
+        margin: 0;
+        margin-top: 58px;
+        width: 209px;
+        height: 57px;
+        border: 1px solid $main-color; 
+        background: transparent;     
+        
+
+    }
+    &_advantage{
+        margin-top: 80px;
+        width: 344px;
+        height: 66px;       
+        background: #FF7BAB;
+        border-radius: 60px;
+        &:hover{
+            background: $main-color;
+        }
+
+        
+        
+        
+        
+    }
 }
