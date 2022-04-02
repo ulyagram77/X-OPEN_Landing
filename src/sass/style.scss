@@ -1,5 +1,7 @@
 @import 'libs/bootstrap-reboot.min';
-@import 'libs/bootstrap-grid.min';
+
+@import 'base/variables';
+
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Montserrat:wght@400;600&family=Roboto&display=swap');
 
 /* БАЗОВЫЕ СТИЛИ */
@@ -8,3 +10,13 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    width: 1290px;
+    margin: 0 auto;
+
+}
+
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/header';

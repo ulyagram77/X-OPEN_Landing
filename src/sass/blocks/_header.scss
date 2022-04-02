@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        width: 235px;
+        img{
+            width: 100%;
+        }
+    }
+    &__links{
+        width: 412px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+        
+    }
+    
+
+}
