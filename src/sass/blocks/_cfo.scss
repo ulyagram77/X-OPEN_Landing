@@ -1,0 +1,36 @@
+.cfo{
+    height: 950px;
+    padding: 119px 0;
+    background-color: $section-color;
+    &__img{
+        position: absolute;
+        left: 818px;
+        top: -119px;
+        
+
+        
+    }
+
+    &__title{
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;                          
+        color: #E1286F;
+        
+    }
+
+    
+    &__descr{
+        
+        width: 732px;
+        margin-top: 40px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 48px;              
+        color: #FFFFFF;
+        
+    }
+}

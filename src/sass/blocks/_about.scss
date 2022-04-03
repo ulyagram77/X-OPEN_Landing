@@ -1,22 +1,15 @@
 .about{
     position: relative;
-    min-height: 433px;
+    height: 433px;
     padding: 87px 0;
     background-color: $section-color;
+    
 
     &__img{
         position: absolute;
-        width: 439px;
-        min-height: 433px;
-        left: 1464px;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        img{
-            width: 100%;
-            height: 100%;
-            
-        }
+        left: 1157px;
+        top: -87px;
+        
     }
     &__wrapper{
         display: flex;
