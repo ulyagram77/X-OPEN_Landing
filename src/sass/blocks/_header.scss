@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     &__logo{
+        display: block;
         width: 235px;
         img{
             width: 100%;

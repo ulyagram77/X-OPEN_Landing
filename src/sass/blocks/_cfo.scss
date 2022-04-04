@@ -1,12 +1,13 @@
 .cfo{
     position: relative;
-    height: 950px;
+    min-height: 950px;
     padding: 119px 0;
     background-color: $section-color;
 
     &__img{
-        height: 950px;
+        
         position: absolute;
+        height: 100%;
         right: 0;
         bottom: 0;
         

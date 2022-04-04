@@ -1,12 +1,12 @@
 .about{
     position: relative;
-    height: 433px;
+    min-height: 433px;
     padding: 87px 0;
     background-color: $section-color;
     
 
     &__img{
-        height: 433px;
+        height: 100%;
         position: absolute;
         
         right: 0;
