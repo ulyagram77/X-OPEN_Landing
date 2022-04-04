@@ -1,0 +1,106 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+    .button{
+        &:hover{
+            background: $main-color;
+        }
+        &_advantage{
+            
+            &:hover{
+                background: #FF7BAB;
+            }
+        }
+        &_left{
+            &:hover{
+                background: transparent;
+            }
+        }
+    }
+    .promo{
+        &__info{
+            margin-top: 290px;
+        }
+    }
+    .about{
+        &__descr{
+            font-size: 23px;
+        }
+    }
+    .advantages {
+        &__item{
+            width: 300px;
+        }
+        
+        
+    }
+    .cfo{
+        &__info{
+            transform: none;
+        }
+        &__descr{
+            width: 900px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+
+    .header{
+        &__links{
+            justify-content: space-evenly;
+        }
+    }
+    .advantages {
+        &__item{
+            width: 230px;
+        }
+
+        &__item-title {
+            
+            font-size: 20px;
+        }
+        &__descr{
+            font-size: 15px;
+        }
+    }
+    .cfo{
+        
+        &__descr{
+            width: 732px;
+        }
+        &__title{
+            text-align: center;
+        }
+
+        &__img{
+            width: 100%;
+        }
+    }
+    .promo{
+        min-height: 950px;
+    }
+    .advantages{
+        min-height: 800px;
+    }
+        
+        
+    
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
