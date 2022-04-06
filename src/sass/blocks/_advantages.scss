@@ -1,5 +1,5 @@
 .advantages{
-    min-height: 868px;
+    min-height: 720px;
     padding: 140px 0;
 
     &__title{
@@ -18,14 +18,72 @@
         
     }
     &__item{
+        
+        
+        position: relative;
+
         width: 410px;
+        height: 217px;
         text-align: center;
+    
+        background: #FF7BAB;
+        &:hover{
+            img{
+                clip-path: circle(0.0% at 0 0);
+            }
+            
+            
+        }
+        &_center{
+            
+            &:hover{
+                img{
+                    clip-path: circle(0.0% at 50% 0);
+                }
+                
+                
+            }
+        }
+        &_right{
+            
+            &:hover{
+                img{
+                    clip-path: circle(0.1% at 100% 0);
+                }
+                
+                
+            }
+        }
+        
         
         
     }
     &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+    
         width: 100%;
+        height: 100%;
+    
+        transition: 1s;
+    
+        
+        object-fit: cover;
+        clip-path: circle(140.9% at 0 0);
+        &_center{
+            clip-path: circle(111.5% at 50% 0);
+            
+        }
+        &_right{
+            clip-path: circle(141.3% at 100% 0);
+            
+        }
+        
+        
+        
     }
+    
     &__item-title{
         margin-top: 50px;
         font-style: normal;
