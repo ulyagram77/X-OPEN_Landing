@@ -2,7 +2,15 @@
     
     .cfo{
         &__info{
+            
             transform: none;
+            
+        }
+        &__descr{
+            width: 575px;
+        }
+        &__img{
+            width: 47%;
         }
     }
 }
@@ -119,10 +127,65 @@
     .header {
         
         justify-content: space-between;
-        flex-direction: column;
+       
         align-items: center;
         &__links{
-            margin-top: 25px;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            background-color: rgba(0,0,0, .8);
+            z-index: 2;
+            transition: 0.6s all;
+            &_active{
+                left: 0;
+            }
+        }
+        
+        &__link{
+            margin-top: 50px;
+        }
+        &__logo{
+            transform: translateY(10%);
+            width: 200px;
+        }
+    }
+    .hamburger{
+        display: block;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 12px;
+        
+        span{
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 7px;
+            transition: 0.5s all;
+            &:nth-last-child(1){
+                margin-bottom: 0;
+            }
+        }
+        &_active{
+            span{
+                margin-bottom: -3px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
         }
     }
     .promo{
@@ -189,13 +252,17 @@
         }
     }
     .cfo{
+        min-height: 650px;
         padding: 70px 0;
         &__descr{
             width: 540px;
-            font-size: 20px;
+            
         
         }
     }
+
+    
+
 }
 
 @media (max-width: 576px){
@@ -205,22 +272,13 @@
     }
     .header{
         &__logo{
-            display: block;
-            margin: 0 auto;
-            width: 200px;
-        }
-        &__links{
-            width: 100%;
-            flex-direction: column;
+            
+            width: 140px;
         }
         &__link{
-            font-size: 12px;
-            margin-bottom: 10px;
-            &:nth-last-child(1){
-                margin: 0;
-            }
-            
+            font-size: 14px;
         }
+      
     }
     .promo{
         min-height: 700px;
@@ -268,7 +326,7 @@
             font-size: 20px;
         }
         &__descr{
-            font-size: 17px;
+            
             line-height: 30px;
             width: 100%;
         }
