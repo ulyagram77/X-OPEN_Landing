@@ -17,13 +17,16 @@
         justify-content: space-between;
         
     }
+    &__item-info{
+        padding: 15px 15px;
+    }
     &__item{
         
         
         position: relative;
 
         width: 410px;
-        height: 217px;
+        min-height: 217px;
         text-align: center;
     
         background: #FF7BAB;

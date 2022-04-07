@@ -148,17 +148,47 @@
             &_active{
                 left: 0;
             }
+            
         }
         
         &__link{
-            margin-top: 50px;
+            margin-top: 100px;
             width: 100%;
             font-size: 20px;
             text-align: center;
+            padding: 40px;
+            
+            
         }
         &__logo{
             transform: translateY(10%);
             width: 200px;
+        }
+    }
+    .closer{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        height: 12px;
+        span{
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #fff;
+            
+            margin-bottom: -3px;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+
         }
     }
     .hamburger{
@@ -276,13 +306,12 @@
         padding: 0 10px;
     }
     .header{
+        padding: 0 20px;
         &__logo{
             
             width: 140px;
         }
-        &__link{
-            font-size: 14px;
-        }
+        
       
     }
     .promo{
@@ -324,6 +353,7 @@
         &__item{
             width: 250px;
         }
+        
     }
     .cfo{
         min-height: auto;
