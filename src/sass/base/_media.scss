@@ -32,20 +32,36 @@
         max-width: 960px;
     }
     .button{
+        outline: unset;
         &:hover{
-            background: $main-color;
-        }
-        &_advantage{
+            background: #FF7BAB;
+
+            box-shadow: none;
             
-            &:hover{
-                background: #FF7BAB;
-            }
+           
+            outline-color: none;
+            outline-offset: unset;
+            outline: unset;
+
+            
         }
         &_left{
+                
             &:hover{
-                background: transparent;
+                background: none;
+                color: #FF7BAB;
+
             }
         }
+
+        &_advantage{
+                
+            &:hover{
+                background: $main-color;
+
+            }
+        }
+        
     }
     .promo{
         &__info{

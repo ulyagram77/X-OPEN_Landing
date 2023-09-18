@@ -4,7 +4,7 @@
     height: 66px;
     background: $main-color;
     border-radius: 60px;
-    border: none;
+    
     margin: 0 auto;
     margin-top: 93px;
     
@@ -14,8 +14,23 @@
     text-align: center;
     text-transform: uppercase; 
     color: #FFFFFF;
+
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(225, 40, 111, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
     &:hover{
-        background: #FF7BAB;
+        
+        background:rgb(187, 31, 91);
+        box-shadow: inset 0 0 20px rgba(255, 123, 171, .5), 0 0 20px rgba(255, 123, 171, .2);
+        
+       
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+         
     }
     &_left{
         margin: 0;
@@ -23,7 +38,17 @@
         width: 209px;
         height: 57px;
         border: 1px solid $main-color; 
-        background: transparent;     
+        background: transparent; 
+        &:hover{
+            background: none;
+            border-color: #FF7BAB;
+            box-shadow: inset 0 0 20px rgba(255, 123, 171, .5), 0 0 20px rgba(255, 123, 171, .2);
+            
+           
+            outline-color: rgba(255, 255, 255, 0);
+            outline-offset: 15px;
+            text-shadow: none;
+        }    
         
 
     }
@@ -34,7 +59,14 @@
         background: #FF7BAB;
         border-radius: 60px;
         &:hover{
+        
             background: $main-color;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, .5), 0 0 20px rgba(0, 0, 0, .2);
+            
+           
+            outline-color: rgba(255, 255, 255, 0);
+            outline-offset: 15px;
+             
         }
 
         
@@ -43,3 +75,4 @@
         
     }
 }
+
